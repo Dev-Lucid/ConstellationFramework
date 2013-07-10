@@ -4,7 +4,7 @@ echo("Building Triggers...");
 include(__DIR__.'/../../lib/php/csn.php');
 csn::init(__DIR__.'/../../../../');
 
-$files = scandir(__DIR__.'/../../db/triggers/');
+$files = scandir(__DIR__.'/../../../../db/triggers/');
 foreach($files as $file)
 {
 	if($file != '.' && $file != '..')

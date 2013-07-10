@@ -4,7 +4,7 @@ echo("Building Procedures...");
 include(__DIR__.'/../../lib/php/csn.php');
 csn::init(__DIR__.'/../../../../');
 
-$files = scandir(__DIR__.'/../../db/procedures/');
+$files = scandir(__DIR__.'/../../../../db/procedures/');
 foreach($files as $file)
 {
 	if($file != '.' && $file != '..')

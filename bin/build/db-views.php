@@ -4,7 +4,7 @@ echo("Building Views...");
 include(__DIR__.'/../../lib/php/csn.php');
 csn::init(__DIR__.'/../../../../');
 
-$files = scandir(__DIR__.'/../../db/views/');
+$files = scandir(__DIR__.'/../../../../db/views/');
 foreach($files as $file)
 {
 	if($file != '.' && $file != '..')
