@@ -4,7 +4,7 @@ echo("Building Models...");
 include(__DIR__.'/../../lib/php/csn.php');
 csn::init(__DIR__.'/../../../../');
 
-$cmd = 'php -f '.__DIR__.'/../../lib/DatabaseManager/bin/build_models.php';
+$cmd = 'php -f '.__DIR__.'/../../../../lib/DatabaseManager/bin/build_models.php';
 
 foreach($config['dbm'] as $name=>$value)
 {
