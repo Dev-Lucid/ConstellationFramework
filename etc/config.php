@@ -15,7 +15,7 @@ $config = array(
 		'stages'=>array(
 		),
 		'javascript'=>array(
-			'http://code.jquery.com/jquery-1.9.1.min.js',
+			'http://code.jquery.com/jquery-latest.min.js',
 			'/lib/TwitterBootstrap/js/affix.js',
 			'/lib/TwitterBootstrap/js/alert.js',
 			'/lib/TwitterBootstrap/js/button.js',
