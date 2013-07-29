@@ -55,6 +55,7 @@ $config = array(
 		)
 	),	
 	'bsc'=>array(
+		'widget_search_paths'=>array(__DIR__.'/../lib/php/bsc_widgets/'),
 		'hooks'=>array(
 			'log'=>$default_log,
 			'translator'=>function($text){ return lng::translate($text); },
