@@ -14,6 +14,9 @@ $config = array(
 		'stage'=>'',
 		'stages'=>array(
 		),
+		'paths'=>array(
+			'base'=>$base_dir,
+		),
 		'javascript'=>array(
 			'http://code.jquery.com/jquery-latest.min.js',
 			'/lib/TwitterBootstrap/js/affix.js',
