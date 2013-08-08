@@ -14,6 +14,8 @@ $config = array(
 		'stage'=>'',
 		'stages'=>array(
 		),
+		'default_controller'=>'',
+		'default_params'=>'{}',
 		'paths'=>array(
 			'base'=>$base_dir,
 		),
