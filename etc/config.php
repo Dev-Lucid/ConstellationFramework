@@ -64,6 +64,10 @@ $config = array(
 		'hooks'=>array(
 			'log'=>$default_log,
 			'translator'=>function($text){ return lng::translate($text); },
+			'modal_show'=>function($obj,$html,$js){
+				jvc::set_response('js',$js);
+				jvc::set_response('bsc_modal',$html);
+			},
 		),
 		'libs'=>array(
 			'css'=>array(
