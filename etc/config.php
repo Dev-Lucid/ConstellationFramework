@@ -68,6 +68,9 @@ $config = array(
 				jvc::set_response('js',$js);
 				jvc::set_response('bsc_modal',$html);
 			},
+			'js'=>function($js){
+				jvc::set_response('js',$js);
+			},
 		),
 		'libs'=>array(
 			'css'=>array(
