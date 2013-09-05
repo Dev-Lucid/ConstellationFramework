@@ -98,6 +98,7 @@ $config = array(
 		'hooks'=>array(
 			'log'=>$default_log,
 			'deinit'=>function(){
+				img::deinit();
 				ssm::deinit();
 				lng::deinit();
 				dfm::deinit();
@@ -119,6 +120,9 @@ $config = array(
 		'paths'=>array(__DIR__.'/dictionaries/'),
 	),
 	'ssm'=>array(
+		'hooks'=>array('log'=>$default_log),
+	),
+	'img'=>array(
 		'hooks'=>array('log'=>$default_log),
 	),
 );

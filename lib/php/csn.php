@@ -17,6 +17,7 @@ class csn
 		include(__DIR__.'/../../../JsonVC/lib/php/jvc.php');
 		include(__DIR__.'/../../../LanguageHelper/lib/php/lng.php');
 		include(__DIR__.'/../../../SessionManager/lib/php/ssm.php');
+		include(__DIR__.'/../../../ImageHelper/lib/php/img.php');
 
 		# init all libraries. Order is unimportant, other than lgr must be first.
 		lgr::init($config['lgr']);
@@ -28,6 +29,7 @@ class csn
 		jvc::init($config['jvc']);
 		lng::init($config['lng']);
 		ssm::init($config['ssm']);
+		img::init($config['img']);
 		
 	}
 	
