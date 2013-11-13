@@ -39,6 +39,7 @@ $config = array(
 			'/lib/BootstrapConstructor/lib/js/bsc.form.js',
 			'/lib/BootstrapConstructor/lib/js/bsc.widget.js',
 			'/lib/BootstrapConstructor/lib/js/bsc.widget.dataTable.js',
+			'/lib/BootstrapConstructor/lib/js/bsc.effects.js',
 			'/lib/DatabaseManager/lib/js/dbm.js',
 			'/lib/DataValidator/lib/js/dvr.js',
 			'/lib/JsonVC/lib/js/jvc.js',
