@@ -40,14 +40,14 @@ try
 	# build/fix the font awesome css.
 	$fontawesome = file_get_contents(__DIR__.'/../../../../lib/FontAwesome/css/font-awesome.css');
 	$fontawesome_min = file_get_contents(__DIR__.'/../../../../lib/FontAwesome/css/font-awesome.min.css');
-	$final_uncompressed_css .= str_replace('../font/','fonts/',$fontawesome);
-	$final_compressed_css .= str_replace('../font/','fonts/',$fontawesome_min);
+	$final_uncompressed_css .= str_replace('../fonts/','fonts/',$fontawesome);
+	$final_compressed_css .= str_replace('../fonts/','fonts/',$fontawesome_min);
 	
-	copy(__DIR__.'/../../../../lib/FontAwesome/font/fontawesome-webfont.eot',__DIR__.'/../../../../www/media/fonts/fontawesome-webfont.eot');
-	copy(__DIR__.'/../../../../lib/FontAwesome/font/fontawesome-webfont.svg',__DIR__.'/../../../../www/media/fonts/fontawesome-webfont.svg');
-	copy(__DIR__.'/../../../../lib/FontAwesome/font/fontawesome-webfont.ttf',__DIR__.'/../../../../www/media/fonts/fontawesome-webfont.ttf');
-	copy(__DIR__.'/../../../../lib/FontAwesome/font/fontawesome-webfont.woff',__DIR__.'/../../../../www/media/fonts/fontawesome-webfont.woff');
-	copy(__DIR__.'/../../../../lib/FontAwesome/font/FontAwesome.otf',__DIR__.'/../../../../www/media/fonts/FontAwesome.otf');
+	copy(__DIR__.'/../../../../lib/FontAwesome/fonts/fontawesome-webfont.eot',__DIR__.'/../../../../www/media/fonts/fontawesome-webfont.eot');
+	copy(__DIR__.'/../../../../lib/FontAwesome/fonts/fontawesome-webfont.svg',__DIR__.'/../../../../www/media/fonts/fontawesome-webfont.svg');
+	copy(__DIR__.'/../../../../lib/FontAwesome/fonts/fontawesome-webfont.ttf',__DIR__.'/../../../../www/media/fonts/fontawesome-webfont.ttf');
+	copy(__DIR__.'/../../../../lib/FontAwesome/fonts/fontawesome-webfont.woff',__DIR__.'/../../../../www/media/fonts/fontawesome-webfont.woff');
+	copy(__DIR__.'/../../../../lib/FontAwesome/fonts/FontAwesome.otf',__DIR__.'/../../../../www/media/fonts/FontAwesome.otf');
 
 	file_put_contents(__DIR__.'/../../../../www/media/combined.css',$final_uncompressed_css);
 	file_put_contents(__DIR__.'/../../../../www/media/combined.min.css',$final_compressed_css);
